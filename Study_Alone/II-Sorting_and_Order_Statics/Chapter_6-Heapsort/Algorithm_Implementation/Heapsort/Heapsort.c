@@ -9,6 +9,8 @@
 #include <math.h>
 #include <stdlib.h>
 
+#define NIL -32768
+
 typedef struct {
     int* array;
     int length;
@@ -32,6 +34,14 @@ void exchange(int* x, int* y){
     temp = *x;
     *x = * y;
     *y = temp;
+}
+
+int array_length(int A[]){
+    int i = 0;
+    while (A[i] != NIL) {
+	i = i + 1;
+    }
+    return i;
 }
 
 void max_heapify(heap H, int i){ /* "float down" A[i] to matain the heap property */
@@ -59,25 +69,32 @@ void build_max_heap(heap H){
     }
 }
 
-void clrs_heapsort(heap H){
+void clrs_heapsort(int A[]){
+    int seq_len = array_length(A);
+    heap H = {A, seq_len, seq_len};
     int i;
     build_max_heap(H);
     for (i = H.length - 1; i >= 1; i = i - 1) {
-	exchange(&(H.array[0]), &(H.array[i]));
+	exchange(&A[0], &A[i]);
 	H.heap_size = H.heap_size - 1;
 	max_heapify(H, 0);
     }
 }
 
-int main(int argc, char* argv[]){
+void print_array(int A[]){
+    int seq_len = array_length(A);
     int i = 0;
-    int A[10] = {4, 1, 3, 2, 16, 9, 10, 14, 8, 7};
-    heap H = {A, 10, 10};
-    clrs_heapsort(H);
-    for (i = 0; i <= 9; i = i + 1) {
-	printf("%d\t", A[i]);
+    while (i <= (seq_len - 2)){
+	printf("%d, ", A[i]);
+	i = i + 1;
     }
-    printf("\n");
+    printf("%d\n", A[seq_len - 1]);
+}
+
+int main(int argc, char* argv[]){
+    int A[11] = {4, 1, 3, 2, 16, 9, 10, 14, 8, 7, NIL};
+    clrs_heapsort(A);
+    print_array(A);
     return 0;
 }
 
