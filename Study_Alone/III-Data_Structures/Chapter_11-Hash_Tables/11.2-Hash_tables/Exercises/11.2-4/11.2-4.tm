@@ -4,9 +4,9 @@
 
 <\body>
   <\render-exercise|11.2-4>
-    <render-footnote|*|This solution is digested from the Solution to
-    Selected Exercises and Problems to Introduction to Algorithms at MIT
-    Press, see <hlink|http://mitpress.mit.edu/sites/default/files/titles/content/9780262033848_Solutions_to_Exercises_and_Problems.pdf|http://mitpress.mit.edu/sites/default/files/titles/content/9780262033848_Solutions_to_Exercises_and_Problems.pdf>>
+    <render-footnote|*|This solution is digested from selected solution
+    posted on the website of MIT Press, for more information see
+    http://mitpress.mit.edu/sites/default/files/titles/content/9780262033848_Solutions_to_Exercises_and_Problems.pdf>
 
     Suggest how to allocate and deallocate storage for elements within the
     hash table itself by linking all unused slots into a free list. Assume
@@ -104,6 +104,6 @@
 <\references>
   <\collection>
     <associate|footnote-|<tuple|?|?|../../../../../../../../../../.TeXmacs/texts/scratch/no_name_28.tm>>
-    <associate|footnote-*|<tuple|?|1|../../../../../../../../../../.TeXmacs/texts/scratch/no_name_28.tm>>
+    <associate|footnote-*|<tuple|?|1>>
   </collection>
 </references>
