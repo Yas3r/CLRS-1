@@ -39,7 +39,7 @@
       <math|\<Theta\> <around*|(|1+\<alpha\>|)>>, but reduced a half compared
       to the unsorted order list in the text.<new-line> <hspace|2ex>Insertion
       in this scenario takes average-time <math|\<Theta\>
-      <around*|(|1+\<alpha\>|)>>, a severe decline in performance compared to
+      <around*|(|1+\<alpha\>|)>>, a subtle decline in performance compared to
       the original of <math|\<Theta\> <around*|(|1|)>>. This is because we
       need to find the right position instead of the head to insert the new
       element so that the list remains sorted. Since the major work in
