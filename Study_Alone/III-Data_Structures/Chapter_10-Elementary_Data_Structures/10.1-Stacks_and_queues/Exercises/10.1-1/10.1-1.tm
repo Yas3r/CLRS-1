@@ -21,7 +21,24 @@
     <\answer>
       \;
 
-      Figure shows the result of each operation in the sequence
+      Figure <reference|10.1-1_Figure><\float|float|tbh>
+        <big-figure|<label|10.1-1_Figure><with|gr-mode|<tuple|group-edit|group-ungroup>|gr-frame|<tuple|scale|1cm|<tuple|0.480002gw|0.5gh>>|gr-geometry|<tuple|geometry|1par|0.6par>|gr-grid|<tuple|empty>|gr-grid-old|<tuple|cartesian|<point|0|0>|1>|gr-edit-grid-aspect|<tuple|<tuple|axes|none>|<tuple|1|none>|<tuple|10|none>>|gr-edit-grid|<tuple|empty>|gr-edit-grid-old|<tuple|cartesian|<point|0|0>|1>|gr-arrow-end|\<gtr\>|gr-auto-crop|true|<graphics||<gr-group|<with|arrow-end|\<gtr\>|<line|<point|-5.75|1.8>|<point|-5.75|2.3>>>|<text-at|<math|S.<text|<with|font-shape|italic|top>>=1>|<point|-6.45|1.5>>|<line|<point|-3.0|3.0>|<point|-6.0|3.0>|<point|-6.0|2.5>|<point|-3.0|2.5>>|<text-at|<math|S>|<point|-6.4|2.6>>|<text-at|<very-small|(a)>|<point|-4.7|0.9>>|<line|<point|-5.5|3.0>|<point|-5.5|2.5>>|<text-at|4|<point|-5.85|2.65>>|<line|<point|-5.0|3.0>|<point|-5.0|2.5>>|<text-at|<very-small|1>|<point|-5.8|3.1>>|<line|<point|-4.5|3.0>|<point|-4.5|2.5>>|<text-at|<very-small|2>|<point|-5.3|3.1>>|<line|<point|-4.0|3.0>|<point|-4.0|2.5>>|<text-at|<very-small|3>|<point|-4.8|3.1>>|<text-at|<very-small|4>|<point|-4.3|3.1>>|<line|<point|-3.5|3.0>|<point|-3.5|2.5>>|<text-at|<very-small|5>|<point|-3.8|3.1>>|<text-at|<very-small|6>|<point|-3.3|3.1>>>|<gr-group|<with|arrow-end|\<gtr\>|<line|<point|-0.25|1.8>|<point|-0.25|2.3>>>|<line|<point|2.0|3.0>|<point|-1.0|3.0>|<point|-1.0|2.5>|<point|2.0|2.5>>|<text-at|<math|S>|<point|-1.4|2.6>>|<text-at|4|<point|-0.85|2.65>>|<line|<point|-0.5|3.0>|<point|-0.5|2.5>>|<text-at|<math|S.<text|<with|font-shape|italic|top>>=2>|<point|-0.95|1.5>>|<text-at|<very-small|(b)>|<point|0.3|0.9>>|<text-at|1|<point|-0.35|2.65>>|<line|<point|-5.55111512312578e-17|3.0>|<point|-5.55111512312578e-17|2.5>>|<text-at|<very-small|1>|<point|-0.8|3.1>>|<line|<point|0.5|3.0>|<point|0.5|2.5>>|<text-at|<very-small|2>|<point|-0.3|3.1>>|<text-at|<very-small|3>|<point|0.2|3.1>>|<line|<point|1.0|3.0>|<point|1.0|2.5>>|<text-at|<very-small|4>|<point|0.7|3.1>>|<line|<point|1.5|3.0>|<point|1.5|2.5>>|<text-at|<very-small|5>|<point|1.2|3.1>>|<text-at|<very-small|6>|<point|1.7|3.1>>>|<gr-group|<line|<point|7.0|3.0>|<point|4.0|3.0>|<point|4.0|2.5>|<point|7.0|2.5>>|<text-at|<math|S>|<point|3.6|2.6>>|<text-at|4|<point|4.15|2.65>>|<line|<point|4.5|3.0>|<point|4.5|2.5>>|<text-at|<very-small|(c)>|<point|5.3|0.9>>|<with|arrow-end|\<gtr\>|<line|<point|5.25|1.8>|<point|5.25|2.3>>>|<text-at|1|<point|4.65|2.65>>|<line|<point|5.0|3.0>|<point|5.0|2.5>>|<text-at|<math|S.<text|<with|font-shape|italic|top>>=3>|<point|4.55|1.5>>|<text-at|<very-small|1>|<point|4.2|3.1>>|<text-at|3|<point|5.15|2.65>>|<line|<point|5.5|3.0>|<point|5.5|2.5>>|<text-at|<very-small|2>|<point|4.7|3.1>>|<text-at|<very-small|3>|<point|5.2|3.1>>|<line|<point|6.0|3.0>|<point|6.0|2.5>>|<text-at|<very-small|4>|<point|5.7|3.1>>|<line|<point|6.5|3.0>|<point|6.5|2.5>>|<text-at|<very-small|5>|<point|6.2|3.1>>|<text-at|<very-small|6>|<point|6.7|3.1>>>|<gr-group|<with|arrow-end|\<gtr\>|<line|<point|-5.25|-2.2>|<point|-5.25|-1.7>>>|<text-at|<math|S.<text|<with|font-shape|italic|top>>=2>|<point|-5.95|-2.5>>|<line|<point|-3.0|-1.0>|<point|-6.0|-1.0>|<point|-6.0|-1.5>|<point|-3.0|-1.5>>|<text-at|<math|S>|<point|-6.4|-1.4>>|<text-at|<very-small|(d)>|<point|-4.7|-3.1>>|<line|<point|-5.5|-1.0>|<point|-5.5|-1.5>>|<text-at|4|<point|-5.85|-1.35>>|<text-at|1|<point|-5.35|-1.35>>|<line|<point|-5.0|-1.0>|<point|-5.0|-1.5>>|<text-at|<very-small|1>|<point|-5.8|-0.9>>|<text-at|3|<point|-4.85|-1.35>>|<line|<point|-4.5|-1.0>|<point|-4.5|-1.5>>|<text-at|<very-small|2>|<point|-5.3|-0.9>>|<line|<point|-4.0|-1.0>|<point|-4.0|-1.5>>|<text-at|<very-small|3>|<point|-4.8|-0.9>>|<text-at|<very-small|4>|<point|-4.3|-0.9>>|<line|<point|-3.5|-1.0>|<point|-3.5|-1.5>>|<text-at|<very-small|5>|<point|-3.8|-0.9>>|<text-at|<very-small|6>|<point|-3.3|-0.9>>>|<gr-group|<line|<point|2.0|-1.0>|<point|-1.0|-1.0>|<point|-1.0|-1.5>|<point|2.0|-1.5>>|<text-at|<math|S>|<point|-1.4|-1.4>>|<text-at|4|<point|-0.85|-1.35>>|<line|<point|-0.5|-1.0>|<point|-0.5|-1.5>>|<with|arrow-end|\<gtr\>|<line|<point|0.25|-2.2>|<point|0.25|-1.7>>>|<text-at|1|<point|-0.35|-1.35>>|<text-at|<very-small|(e)>|<point|0.3|-3.1>>|<line|<point|-1.38777878078145e-16|-1.0>|<point|-1.38777878078145e-16|-1.5>>|<text-at|<very-small|1>|<point|-0.8|-0.9>>|<text-at|8|<point|0.15|-1.35>>|<text-at|<math|S.<text|<with|font-shape|italic|top>>=3>|<point|-0.45|-2.5>>|<text-at|<very-small|2>|<point|-0.3|-0.9>>|<line|<point|0.5|-1.0>|<point|0.5|-1.5>>|<text-at|<very-small|3>|<point|0.2|-0.9>>|<line|<point|1.0|-1.0>|<point|1.0|-1.5>>|<text-at|<very-small|4>|<point|0.7|-0.9>>|<line|<point|1.5|-1.0>|<point|1.5|-1.5>>|<text-at|<very-small|5>|<point|1.2|-0.9>>|<text-at|<very-small|6>|<point|1.7|-0.9>>>|<gr-group|<with|arrow-end|\<gtr\>|<line|<point|4.75|-2.2>|<point|4.75|-1.7>>>|<line|<point|7.0|-1.0>|<point|4.0|-1.0>|<point|4.0|-1.5>|<point|7.0|-1.5>>|<text-at|<math|S>|<point|3.6|-1.4>>|<text-at|<math|S.<text|<with|font-shape|italic|top>>=2>|<point|4.05|-2.5>>|<text-at|<very-small|(f)>|<point|5.3|-3.1>>|<text-at|4|<point|4.15|-1.35>>|<line|<point|4.5|-1.0>|<point|4.5|-1.5>>|<text-at|1|<point|4.65|-1.35>>|<line|<point|5.0|-1.0>|<point|5.0|-1.5>>|<text-at|<very-small|1>|<point|4.2|-0.9>>|<text-at|8|<point|5.15|-1.35>>|<line|<point|5.5|-1.0>|<point|5.5|-1.5>>|<text-at|<very-small|2>|<point|4.7|-0.9>>|<text-at|<very-small|3>|<point|5.2|-0.9>>|<line|<point|6.0|-1.0>|<point|6.0|-1.5>>|<text-at|<very-small|4>|<point|5.7|-0.9>>|<line|<point|6.5|-1.0>|<point|6.5|-1.5>>|<text-at|<very-small|5>|<point|6.2|-0.9>>|<text-at|<very-small|6>|<point|6.7|-0.9>>>>>|An
+        array implementation of a stack <math|S>. <strong|(a)> Stack <math|S>
+        has 1 element, after a <with|font-shape|small-caps|Push><math|<around*|(|S,4|)>>
+        operation on an empty stack. <strong|(b)> Stack <math|S> after the
+        call <with|font-shape|small-caps|Push><math|<around*|(|S,1|)>>.
+        <strong|(c)> Stack <math|S> after the call
+        <with|font-shape|small-caps|Push><math|<around*|(|S,3|)>>.
+        <strong|(d)> Stack <math|S> after the call
+        <with|font-shape|small-caps|Pop><math|<around*|(|S|)>> has returned
+        the element <math|3>. <strong|(e)> Stack <math|S> after the call
+        <with|font-shape|small-caps|Push><math|<around*|(|S,8|)>>.
+        <strong|(f)> Stack <math|S> after the call
+        <with|font-shape|small-caps|Pop><math|<around*|(|S|)>> has returned
+        the element <math|8>, which is the one most recently pushed. Although
+        element <math|8> still appears in the array, it is no longer in the
+        stack; the top is element <math|1>.>
+      </float> shows the result of each operation in the sequence
       <with|font-shape|small-caps|Push><math|<around*|(|S,4|)>>,
       <with|font-shape|small-caps|Push><math|<around*|(|S,1|)>>,
       <with|font-shape|small-caps|Push><math|<around*|(|S,3|)>>,
@@ -29,21 +46,6 @@
       <with|font-shape|small-caps|Push><math|<around*|(|S,8|)>>, and
       <with|font-shape|small-caps|Pop><math|<around*|(|S|)>> on an initially
       empty stack <math|S> stored in array <math|S<around*|[|1 . . 6|]>>.
-
-      <big-figure|<with|gr-mode|<tuple|group-edit|group-ungroup>|gr-frame|<tuple|scale|1cm|<tuple|0.480002gw|0.5gh>>|gr-geometry|<tuple|geometry|1par|0.6par>|gr-grid|<tuple|empty>|gr-grid-old|<tuple|cartesian|<point|0|0>|1>|gr-edit-grid-aspect|<tuple|<tuple|axes|none>|<tuple|1|none>|<tuple|10|none>>|gr-edit-grid|<tuple|empty>|gr-edit-grid-old|<tuple|cartesian|<point|0|0>|1>|gr-arrow-end|\<gtr\>|gr-auto-crop|true|<graphics||<gr-group|<with|arrow-end|\<gtr\>|<line|<point|-5.75|1.8>|<point|-5.75|2.3>>>|<text-at|<math|S.<text|<with|font-shape|italic|top>>=1>|<point|-6.45|1.5>>|<line|<point|-3.0|3.0>|<point|-6.0|3.0>|<point|-6.0|2.5>|<point|-3.0|2.5>>|<text-at|<math|S>|<point|-6.4|2.6>>|<text-at|<very-small|(a)>|<point|-4.7|0.9>>|<line|<point|-5.5|3.0>|<point|-5.5|2.5>>|<text-at|4|<point|-5.85|2.65>>|<line|<point|-5.0|3.0>|<point|-5.0|2.5>>|<text-at|<very-small|1>|<point|-5.8|3.1>>|<line|<point|-4.5|3.0>|<point|-4.5|2.5>>|<text-at|<very-small|2>|<point|-5.3|3.1>>|<line|<point|-4.0|3.0>|<point|-4.0|2.5>>|<text-at|<very-small|3>|<point|-4.8|3.1>>|<text-at|<very-small|4>|<point|-4.3|3.1>>|<line|<point|-3.5|3.0>|<point|-3.5|2.5>>|<text-at|<very-small|5>|<point|-3.8|3.1>>|<text-at|<very-small|6>|<point|-3.3|3.1>>>|<gr-group|<with|arrow-end|\<gtr\>|<line|<point|-0.25|1.8>|<point|-0.25|2.3>>>|<line|<point|2.0|3.0>|<point|-1.0|3.0>|<point|-1.0|2.5>|<point|2.0|2.5>>|<text-at|<math|S>|<point|-1.4|2.6>>|<text-at|4|<point|-0.85|2.65>>|<line|<point|-0.5|3.0>|<point|-0.5|2.5>>|<text-at|<math|S.<text|<with|font-shape|italic|top>>=2>|<point|-0.95|1.5>>|<text-at|<very-small|(b)>|<point|0.3|0.9>>|<text-at|1|<point|-0.35|2.65>>|<line|<point|-5.55111512312578e-17|3.0>|<point|-5.55111512312578e-17|2.5>>|<text-at|<very-small|1>|<point|-0.8|3.1>>|<line|<point|0.5|3.0>|<point|0.5|2.5>>|<text-at|<very-small|2>|<point|-0.3|3.1>>|<text-at|<very-small|3>|<point|0.2|3.1>>|<line|<point|1.0|3.0>|<point|1.0|2.5>>|<text-at|<very-small|4>|<point|0.7|3.1>>|<line|<point|1.5|3.0>|<point|1.5|2.5>>|<text-at|<very-small|5>|<point|1.2|3.1>>|<text-at|<very-small|6>|<point|1.7|3.1>>>|<gr-group|<line|<point|7.0|3.0>|<point|4.0|3.0>|<point|4.0|2.5>|<point|7.0|2.5>>|<text-at|<math|S>|<point|3.6|2.6>>|<text-at|4|<point|4.15|2.65>>|<line|<point|4.5|3.0>|<point|4.5|2.5>>|<text-at|<very-small|(c)>|<point|5.3|0.9>>|<with|arrow-end|\<gtr\>|<line|<point|5.25|1.8>|<point|5.25|2.3>>>|<text-at|1|<point|4.65|2.65>>|<line|<point|5.0|3.0>|<point|5.0|2.5>>|<text-at|<math|S.<text|<with|font-shape|italic|top>>=3>|<point|4.55|1.5>>|<text-at|<very-small|1>|<point|4.2|3.1>>|<text-at|3|<point|5.15|2.65>>|<line|<point|5.5|3.0>|<point|5.5|2.5>>|<text-at|<very-small|2>|<point|4.7|3.1>>|<text-at|<very-small|3>|<point|5.2|3.1>>|<line|<point|6.0|3.0>|<point|6.0|2.5>>|<text-at|<very-small|4>|<point|5.7|3.1>>|<line|<point|6.5|3.0>|<point|6.5|2.5>>|<text-at|<very-small|5>|<point|6.2|3.1>>|<text-at|<very-small|6>|<point|6.7|3.1>>>|<gr-group|<with|arrow-end|\<gtr\>|<line|<point|-5.25|-2.2>|<point|-5.25|-1.7>>>|<text-at|<math|S.<text|<with|font-shape|italic|top>>=2>|<point|-5.95|-2.5>>|<line|<point|-3.0|-1.0>|<point|-6.0|-1.0>|<point|-6.0|-1.5>|<point|-3.0|-1.5>>|<text-at|<math|S>|<point|-6.4|-1.4>>|<text-at|<very-small|(d)>|<point|-4.7|-3.1>>|<line|<point|-5.5|-1.0>|<point|-5.5|-1.5>>|<text-at|4|<point|-5.85|-1.35>>|<text-at|1|<point|-5.35|-1.35>>|<line|<point|-5.0|-1.0>|<point|-5.0|-1.5>>|<text-at|<very-small|1>|<point|-5.8|-0.9>>|<text-at|3|<point|-4.85|-1.35>>|<line|<point|-4.5|-1.0>|<point|-4.5|-1.5>>|<text-at|<very-small|2>|<point|-5.3|-0.9>>|<line|<point|-4.0|-1.0>|<point|-4.0|-1.5>>|<text-at|<very-small|3>|<point|-4.8|-0.9>>|<text-at|<very-small|4>|<point|-4.3|-0.9>>|<line|<point|-3.5|-1.0>|<point|-3.5|-1.5>>|<text-at|<very-small|5>|<point|-3.8|-0.9>>|<text-at|<very-small|6>|<point|-3.3|-0.9>>>|<gr-group|<line|<point|2.0|-1.0>|<point|-1.0|-1.0>|<point|-1.0|-1.5>|<point|2.0|-1.5>>|<text-at|<math|S>|<point|-1.4|-1.4>>|<text-at|4|<point|-0.85|-1.35>>|<line|<point|-0.5|-1.0>|<point|-0.5|-1.5>>|<with|arrow-end|\<gtr\>|<line|<point|0.25|-2.2>|<point|0.25|-1.7>>>|<text-at|1|<point|-0.35|-1.35>>|<text-at|<very-small|(e)>|<point|0.3|-3.1>>|<line|<point|-1.38777878078145e-16|-1.0>|<point|-1.38777878078145e-16|-1.5>>|<text-at|<very-small|1>|<point|-0.8|-0.9>>|<text-at|8|<point|0.15|-1.35>>|<text-at|<math|S.<text|<with|font-shape|italic|top>>=3>|<point|-0.45|-2.5>>|<text-at|<very-small|2>|<point|-0.3|-0.9>>|<line|<point|0.5|-1.0>|<point|0.5|-1.5>>|<text-at|<very-small|3>|<point|0.2|-0.9>>|<line|<point|1.0|-1.0>|<point|1.0|-1.5>>|<text-at|<very-small|4>|<point|0.7|-0.9>>|<line|<point|1.5|-1.0>|<point|1.5|-1.5>>|<text-at|<very-small|5>|<point|1.2|-0.9>>|<text-at|<very-small|6>|<point|1.7|-0.9>>>|<gr-group|<with|arrow-end|\<gtr\>|<line|<point|4.75|-2.2>|<point|4.75|-1.7>>>|<line|<point|7.0|-1.0>|<point|4.0|-1.0>|<point|4.0|-1.5>|<point|7.0|-1.5>>|<text-at|<math|S>|<point|3.6|-1.4>>|<text-at|<math|S.<text|<with|font-shape|italic|top>>=2>|<point|4.05|-2.5>>|<text-at|<very-small|(f)>|<point|5.3|-3.1>>|<text-at|4|<point|4.15|-1.35>>|<line|<point|4.5|-1.0>|<point|4.5|-1.5>>|<text-at|1|<point|4.65|-1.35>>|<line|<point|5.0|-1.0>|<point|5.0|-1.5>>|<text-at|<very-small|1>|<point|4.2|-0.9>>|<text-at|8|<point|5.15|-1.35>>|<line|<point|5.5|-1.0>|<point|5.5|-1.5>>|<text-at|<very-small|2>|<point|4.7|-0.9>>|<text-at|<very-small|3>|<point|5.2|-0.9>>|<line|<point|6.0|-1.0>|<point|6.0|-1.5>>|<text-at|<very-small|4>|<point|5.7|-0.9>>|<line|<point|6.5|-1.0>|<point|6.5|-1.5>>|<text-at|<very-small|5>|<point|6.2|-0.9>>|<text-at|<very-small|6>|<point|6.7|-0.9>>>>>|An
-      array implementation of a stack <math|S>. <strong|(a)> Stack <math|S>
-      has 1 element, after a <with|font-shape|small-caps|Push><math|<around*|(|S,4|)>>
-      operation on an empty stack. <strong|(b)> Stack <math|S> after the call
-      <with|font-shape|small-caps|Push><math|<around*|(|S,1|)>>. <strong|(c)>
-      Stack <math|S> after the call <with|font-shape|small-caps|Push><math|<around*|(|S,3|)>>.
-      <strong|(d)> Stack <math|S> after the call
-      <with|font-shape|small-caps|Pop><math|<around*|(|S|)>> has returned the
-      element <math|3>. <strong|(e)> Stack <math|S> after the call
-      <with|font-shape|small-caps|Push><math|<around*|(|S,8|)>>. <strong|(f)>
-      Stack <math|S> after the call <with|font-shape|small-caps|Pop><math|<around*|(|S|)>>
-      has returned the element <math|8>, which is the one most recently
-      pushed. Although element <math|8> still appears in the array, it is no
-      longer in the stack; the top is element <math|1>.>
     </answer>
   </render-exercise>
 </body>
@@ -57,9 +59,11 @@
 
 <\references>
   <\collection>
-    <associate|auto-1|<tuple|1|1|../../../../../../../../../../.TeXmacs/texts/scratch/no_name_28.tm>>
+    <associate|10.1-1_Figure|<tuple|1|?>>
+    <associate|auto-1|<tuple|1|1>>
+    <associate|auto-2|<tuple|2|?>>
     <associate|footnote-|<tuple|?|?|../../../../../../../../../../.TeXmacs/texts/scratch/no_name_28.tm>>
-    <associate|footnote-*|<tuple|?|?|../../../../../../../../../../.TeXmacs/texts/scratch/no_name_28.tm>>
+    <associate|footnote-*|<tuple|?|?>>
   </collection>
 </references>
 
@@ -71,12 +75,25 @@
       Stack <with|mode|<quote|math>|S> has 1 element, after a
       <with|font-shape|<quote|small-caps>|Push><with|mode|<quote|math>|<around*|(|S,4|)>>
       operation on an empty stack. <with|font-series|<quote|bold>|math-font-series|<quote|bold>|(b)>
-      Stack <with|mode|<quote|math>|S> after the calls
+      Stack <with|mode|<quote|math>|S> after the call
       <with|font-shape|<quote|small-caps>|Push><with|mode|<quote|math>|<around*|(|S,1|)>>.
       <with|font-series|<quote|bold>|math-font-series|<quote|bold>|(c)> Stack
-      <with|mode|<quote|math>|S> after the calls
+      <with|mode|<quote|math>|S> after the call
       <with|font-shape|<quote|small-caps>|Push><with|mode|<quote|math>|<around*|(|S,3|)>>.
-      |<pageref|auto-1>>
+      <with|font-series|<quote|bold>|math-font-series|<quote|bold>|(d)> Stack
+      <with|mode|<quote|math>|S> after the call
+      <with|font-shape|<quote|small-caps>|Pop><with|mode|<quote|math>|<around*|(|S|)>>
+      has returned the element <with|mode|<quote|math>|3>.
+      <with|font-series|<quote|bold>|math-font-series|<quote|bold>|(e)> Stack
+      <with|mode|<quote|math>|S> after the call
+      <with|font-shape|<quote|small-caps>|Push><with|mode|<quote|math>|<around*|(|S,8|)>>.
+      <with|font-series|<quote|bold>|math-font-series|<quote|bold>|(f)> Stack
+      <with|mode|<quote|math>|S> after the call
+      <with|font-shape|<quote|small-caps>|Pop><with|mode|<quote|math>|<around*|(|S|)>>
+      has returned the element <with|mode|<quote|math>|8>, which is the one
+      most recently pushed. Although element <with|mode|<quote|math>|8> still
+      appears in the array, it is no longer in the stack; the top is element
+      <with|mode|<quote|math>|1>.|<pageref|auto-1>>
     </associate>
   </collection>
 </auxiliary>
