@@ -54,8 +54,10 @@
       <with|font-shape|small-caps|Stack-Empty>. If we attempt to pop an empty
       stack, then it underflows. Both stacks become full when their top
       elements are adjacent to each other. If an element is pushed to any one
-      of them, then the one get augmented overflows.<new-line> \ \ We can
-      implement each of the stack operations with just a few lines of code:
+      of them, then the one get augmented overflows. (In our pseudocode
+      implementation, we don't worry about stack overflow.)<new-line> \ \ We
+      can implement each of the stack operations with just a few lines of
+      code:
 
       <\render-code>
         <with|font-shape|small-caps|Stack-Empty><math|<around*|(|S|)>>
@@ -63,12 +65,12 @@
         1<hspace|3ex><strong|if> <math|S.<text|<em|bottom> <verbatim|==>>
         1><hspace|8ex><verbatim|//> <math|S> is Stack <math|S<rsub|1>>
 
-        2<hspace|7ex><strong|if> <math|S.<text|<em|top>> <text|<verbatim|==>>
+        2<hspace|8ex><strong|if> <math|S.<text|<em|top>> <text|<verbatim|==>>
         0>
 
-        3<hspace|12ex><strong|return> <with|font-shape|small-caps|true>
+        3<hspace|13ex><strong|return> <with|font-shape|small-caps|true>
 
-        4<hspace|7ex><strong|else> <strong|return>
+        4<hspace|8ex><strong|else> <strong|return>
         <with|font-shape|small-caps|false>
 
         5<hspace|3ex><strong|else><hspace|20ex><verbatim|//> <math|S> is
@@ -77,7 +79,7 @@
         6<hspace|8ex><strong|if> <math|S.<text|<em|top>> <text|<verbatim|==>>
         n+1>
 
-        7<hspace|13.125ex><strong|return> <with|font-shape|small-caps|true>
+        7<hspace|13ex><strong|return> <with|font-shape|small-caps|true>
 
         8<hspace|8ex><strong|else> <strong|return>
         <with|font-shape|small-caps|false>
@@ -86,18 +88,25 @@
 
         <with|font-shape|small-caps|Push><math|<around*|(|S,x|)>>
 
-        1<hspace|3ex><strong|if> <math|S.<text|<em|bottom>>
+        1<hspace|3ex><strong|if> <math|<around*|\||S<rsub|1>.<text|<em|top>>
+        - S<rsub|2>.<text|<em|top>>|\|> <text|<verbatim|==>> 1>
+
+        2<hspace|8ex><strong|error> ``overflow''
+
+        3<hspace|3ex><strong|else>
+
+        4<hspace|8ex><strong|if> <math|S.<text|<em|bottom>>
         <text|<verbatim|==>> 1>
 
-        2<hspace|8ex><math|S.<text|<em|top>> = S.<text|<em|top>> + 1>
+        5<hspace|13ex><math|S.<text|<em|top>> = S.<text|<em|top>> + 1>
 
-        3<hspace|8ex><math|S<around*|[|S.<text|<em|top>>|]> = x>
+        6<hspace|13ex><math|A<around*|[|S.<text|<em|top>>|]> = x>
 
-        4<hspace|3ex><strong|else>
+        7<hspace|8ex><strong|else>
 
-        5
+        8<hspace|13ex><math|S.<text|<em|top>> = S.<text|<em|top>> - 1>
 
-        6
+        9<hspace|13ex><math|A<around*|[|S.<text|<em|top>>|]> = x>
 
         \;
 
@@ -114,14 +123,14 @@
 
         5<hspace|12ex><math|S.<text|<em|top>> = S.<text|<em|top>> - 1>
 
-        6<hspace|12ex><strong|return> <math|S<around*|[|S.<text|<em|top>> +
+        6<hspace|12ex><strong|return> <math|A<around*|[|S.<text|<em|top>> +
         1|]>>
 
         7<hspace|8ex><strong|else>
 
         8<hspace|12ex><math|S.<text|<em|top>> = S.<text|<em|top>> + 1>
 
-        9<hspace|12ex><strong|return> <math|S<around*|[|S.<text|<em|top>> -
+        9<hspace|12ex><strong|return> <math|A<around*|[|S.<text|<em|top>> -
         1|]>>
       </render-code>
     </answer>
@@ -141,14 +150,14 @@
 
 <\references>
   <\collection>
-    <associate|10.1-2_Figure|<tuple|1|?>>
+    <associate|10.1-2_Figure|<tuple|1|1>>
     <associate|10.2-1_Figure|<tuple|1|1>>
     <associate|10.2-1_Figure_1|<tuple|1|?>>
     <associate|auto-1|<tuple|1|1>>
     <associate|auto-2|<tuple|2|2>>
     <associate|auto-3|<tuple|3|?>>
     <associate|footnote-|<tuple|?|?>>
-    <associate|footnote-*|<tuple|?|?>>
+    <associate|footnote-*|<tuple|?|1>>
   </collection>
 </references>
 
