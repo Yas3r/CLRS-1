@@ -19,12 +19,13 @@
       <with|font-shape|small-caps|Enqueue> an element to the queue <math|Q>
       by <with|font-shape|small-caps|Push>ing it into <math|S<rsub|1>> and
       <with|font-shape|small-caps|Dequeue> the tail element by
-      <with|font-shape|small-caps|Pop>ing from <math|S<rsub|2>>. Whenever
-      <math|S<rsub|1>> becomes full or <math|S<rsub|2>> becomes empty, we
-      transmit as much elements in <math|S<rsub|1>> to <math|S<rsub|2>> as
-      possible using <with|font-shape|small-caps|Transmit>. A queue is said
-      to be empty if and only if both of its stacks <math|S<rsub|1>> and
-      <math|S<rsub|2>> are empty. Likewise, the queue becomes full when
+      <with|font-shape|small-caps|Pop>ing it from <math|S<rsub|2>>. If stack
+      <math|S<rsub|2>> is empty when a <with|font-shape|small-caps|Dequeue>
+      is requested, or <math|S<rsub|1>> is full when an
+      <with|font-shape|small-caps|Enqueue> is requested, we transmit as many
+      elements in <math|S<rsub|1>> to <math|S<rsub|2>> as possible. A queue
+      is said to be empty if and only if both of its stacks <math|S<rsub|1>>
+      and <math|S<rsub|2>> are empty. Likewise, the queue becomes full when
       <math|S<rsub|1>> and <math|S<rsub|2>> are both full.
 
       <\render-code>
@@ -65,11 +66,6 @@
         5<hspace|13ex><with|font-shape|small-caps|Transmit><math|<around*|(|S<rsub|1>,S<rsub|2>|)>>
 
         6<hspace|8ex><with|font-shape|small-caps|Push><math|<around*|(|S<rsub|1>,x|)>>
-
-        7<hspace|8ex><math|Q.<text|<em|head>> = S<rsub|1>.<text|<em|top>>>
-
-        8<hspace|8ex><math|Q.<text|<em|tail>> = S<rsub|2>.<text|<em|top>> +
-        1>
       </render-code>
 
       <\render-code>
@@ -86,11 +82,6 @@
         5<hspace|13ex><with|font-shape|small-caps|Transmit><math|<around*|(|S<rsub|1>,S<rsub|2>|)>>
 
         6<hspace|8ex><with|font-shape|small-caps|Pop><math|<around*|(|S<rsub|2>|)>>
-
-        7<hspace|8ex><math|Q.<text|<em|tail>> = S<rsub|2>.<text|<em|top>> +
-        1>
-
-        8<hspace|8ex><math|Q.<text|<em|head>> = S<rsub|1>.<text|<em|top>>>
       </render-code>
 
       <\render-code>
@@ -118,6 +109,18 @@
 
         2<hspace|8ex><with|font-shape|small-caps|Push><math|<around*|(|S<rsub|2>,<text|<with|font-shape|small-caps|Pop>><around*|(|S<rsub|1>|)>|)>>
       </render-code>
+
+      <hspace|3ex>In the worst case, an <with|font-shape|small-caps|Enqueue>
+      or <with|font-shape|small-caps|Dequeue> operation is performed when
+      stack <math|S<rsub|1>> is full while stack <math|S<rsub|2>> is empty.
+      We must transfer at most <math|n> elements in <math|S<rsub|1>> to
+      <math|S<rsub|2>> and they both take time <math|O <around*|(|n|)>>.
+      However, we could armotize the cost of the transfering over all the
+      <with|font-shape|small-caps|Enqueue> and
+      <with|font-shape|small-caps|Dequeue> operations. So the average-case
+      running time of <with|font-shape|small-caps|Enqueue> and
+      <with|font-shape|small-caps|Dequeue> takes time <math|O
+      <around*|(|1|)>>.
     </answer>
   </render-exercise>
 </body>
@@ -132,6 +135,6 @@
 <\references>
   <\collection>
     <associate|footnote-|<tuple|?|?|../../../../../../../../../../.TeXmacs/texts/scratch/no_name_28.tm>>
-    <associate|footnote-*|<tuple|?|?|../../../../../../../../../../.TeXmacs/texts/scratch/no_name_28.tm>>
+    <associate|footnote-*|<tuple|?|1>>
   </collection>
 </references>
