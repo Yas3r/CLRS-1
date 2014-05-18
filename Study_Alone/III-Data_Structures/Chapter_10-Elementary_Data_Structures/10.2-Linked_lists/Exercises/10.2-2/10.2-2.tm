@@ -31,13 +31,17 @@
       <\render-code>
         <with|font-shape|small-caps|Push><math|<around*|(|S,x|)>>
 
-        1<hspace|3ex><with|font-shape|small-caps|List-Insert><math|<around*|(|S,x|)>>
+        1<hspace|3ex><with|font-shape|small-caps|List-Insert><math|<around*|(|L,x|)>>
       </render-code>
 
       <\render-code>
         <with|font-shape|small-caps|Pop><math|<around*|(|S|)>>
 
-        1<hspace|3ex><with|font-shape|small-caps|List-Delete><math|<around*|(|S,L.<text|<em|head>>|)>>
+        1<hspace|3ex><math|x = L.<text|<em|head>>>
+
+        2<hspace|3ex><with|font-shape|small-caps|List-Delete><math|<around*|(|L,L.<text|<em|head>>|)>>
+
+        3<hspace|3ex><strong|return> <math|x>
       </render-code>
     </answer>
   </render-exercise>
@@ -54,6 +58,6 @@
 <\references>
   <\collection>
     <associate|footnote-|<tuple|?|?|../../../../../../../../../../.TeXmacs/texts/scratch/no_name_28.tm>>
-    <associate|footnote-*|<tuple|?|?|../../../../../../../../../../.TeXmacs/texts/scratch/no_name_28.tm>>
+    <associate|footnote-*|<tuple|?|1|../../../../../../../../../../.TeXmacs/texts/scratch/no_name_28.tm>>
   </collection>
 </references>
