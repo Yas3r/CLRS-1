@@ -30,18 +30,18 @@
       \;
 
       <\render-code>
-        <with|font-shape|small-caps|Print-Binary-Tree-Nodes><math|<around*|(|T|)>>
+        <with|font-shape|small-caps|Print-Binary-Tree><math|<around*|(|T|)>>
 
         1<hspace|3ex><math|x> <math|=> <em|T.root>
 
         2<hspace|3ex><strong|if> <math|x> <math|\<neq\>>
         <with|font-shape|small-caps|nil>
 
-        3<hspace|8ex>print <em|x.key>
+        3<hspace|8ex><with|font-shape|small-caps|Print-Binary-Tree><math|<around*|(|x.<text|<em|left>>|)>>
 
-        4<hspace|8ex><with|font-shape|small-caps|Print-Binary-Tree-Nodes><math|<around*|(|x.<text|<em|left>>|)>>
+        4<hspace|8ex>print <em|x.key>
 
-        5<hspace|8ex><with|font-shape|small-caps|Print-Binary-Tree-Nodes><math|<around*|(|x.<text|<em|right>>|)>>
+        5<hspace|8ex><with|font-shape|small-caps|Print-Binary-Tree><math|<around*|(|x.<text|<em|right>>|)>>
       </render-code>
     </answer>
   </render-exercise>
@@ -57,6 +57,6 @@
 <\references>
   <\collection>
     <associate|footnote-|<tuple|?|?|../../../../../../../../../../.TeXmacs/texts/scratch/no_name_30.tm>>
-    <associate|footnote-*|<tuple|?|?|../../../../../../../../../../.TeXmacs/texts/scratch/no_name_30.tm>>
+    <associate|footnote-*|<tuple|?|?>>
   </collection>
 </references>
