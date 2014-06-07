@@ -43,7 +43,7 @@
 
         <hspace|1.1ex>4<hspace|8ex><strong|while> <math|x> <math|\<neq\>>
         <with|font-shape|small-caps|nil><hspace|14.25ex><verbatim|//> store
-        all nodes on the way towards the left most child
+        all nodes on the path towards the leftmost leaf
 
         <hspace|1.1ex>5<hspace|13ex><with|font-shape|small-caps|Push><math|<around*|(|S,<text|<em|x.left>>|)>>
 
