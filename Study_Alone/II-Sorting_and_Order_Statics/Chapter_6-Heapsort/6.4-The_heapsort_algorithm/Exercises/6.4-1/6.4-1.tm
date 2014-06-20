@@ -69,7 +69,7 @@
         <with|font-shape|small-caps|Build-Max-Heap> has built it in line 1.
         <strong|(b)--(i)> The max-heap just after each call of
         <with|font-shape|small-caps|Max-Heapify> in line 5, showing the value
-        of <math|i> at that time. <strong|(j)> The resultingsorted array
+        of <math|i> at that time. <strong|(j)> The resulting sorted array
         <math|A>.>
 
         \;
@@ -89,16 +89,24 @@
 
 <\references>
   <\collection>
-    <associate|auto-1|<tuple|1|2|../../../../../../../../../../.TeXmacs/texts/scratch/no_name_30.tm>>
+    <associate|auto-1|<tuple|1|2>>
     <associate|footnote-|<tuple|?|?|../../../../../../../../../../.TeXmacs/texts/scratch/no_name_30.tm>>
-    <associate|footnote-*|<tuple|?|?|../../../../../../../../../../.TeXmacs/texts/scratch/no_name_30.tm>>
+    <associate|footnote-*|<tuple|?|1>>
   </collection>
 </references>
 
 <\auxiliary>
   <\collection>
     <\associate|figure>
-      <tuple|normal||<pageref|auto-1>>
+      <tuple|normal|The operation of <with|font-shape|<quote|small-caps>|Heapsort>.
+      <with|font-series|<quote|bold>|math-font-series|<quote|bold>|(a)> The
+      max-heap data structure just after <with|font-shape|<quote|small-caps>|Build-Max-Heap>
+      has built it in line 1. <with|font-series|<quote|bold>|math-font-series|<quote|bold>|(b)--(i)>
+      The max-heap just after each call of
+      <with|font-shape|<quote|small-caps>|Max-Heapify> in line 5, showing the
+      value of <with|mode|<quote|math>|i> at that time.
+      <with|font-series|<quote|bold>|math-font-series|<quote|bold>|(j)> The
+      resultingsorted array <with|mode|<quote|math>|A>.|<pageref|auto-1>>
     </associate>
   </collection>
 </auxiliary>
