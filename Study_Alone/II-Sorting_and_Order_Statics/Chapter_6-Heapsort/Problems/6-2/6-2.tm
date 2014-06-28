@@ -9,6 +9,16 @@
     <assign|enumerate-alpha|<\macro|body>
       <list|<macro|name|<aligned-item|<arg|name><with|font-shape|right|<strong|.>>>>|<macro|name|<strong|<number|<arg|name>|alpha>>>|<arg|body>>
     </macro>>
+
+    <assign|render-code|<\macro|body>
+      <\surround||<no-indent*>>
+        <\padded*>
+          <\with|par-first|0fn|par-par-sep|0fn|item-hsep|<macro|1tab>>
+            <arg|body>
+          </with>
+        </padded*>
+      </surround>
+    </macro>>
   </hide-preamble>
 
   <\render-exercise|<em|6-2>>
@@ -65,7 +75,27 @@
           <very-small|<strong|(a)>> a triple tree and
           <very-small|<strong|(b)>> an array.>
         </float> shows a triple max-heap viewed as a triple tree and an
-        array.
+        array. The root of the tree is <math|A<around*|[|1|]>>, and given the
+        index <math|i> of a node, we can compute the indices of its parent:
+
+        <\render-code>
+          <with|font-shape|small-caps|Parent><math|<around*|(|i|)>>
+
+          1<hspace|3ex><strong|return> <math|<around*|\<lceil\>|<around*|(|i-1|)>/d|\<rceil\>>>
+        </render-code>
+
+        <hspace|3ex>All children of node <math|i> are successors of the last
+        child of node <math|i-1>, which has its index
+        <math|d<around*|(|i-1|)>+1>. So the <math|j>th child of node <math|i>
+        is <math|d*<around*|(|i-1|)>+1+j>:
+
+        <\render-code>
+          <with|font-shape|small-caps|Child><math|<around*|(|i,j|)>>
+
+          1<hspace|3ex><strong|return> <math|d*<around*|(|i-1|)>+1+j>
+        </render-code>
+
+        <item>
       </enumerate-alpha>
     </answer>
   </render-exercise>
@@ -93,7 +123,9 @@
 <\auxiliary>
   <\collection>
     <\associate|figure>
-      <tuple|normal||<pageref|auto-1>>
+      <tuple|normal|A max-heap viewed as <with|font-size|<quote|0.707>|<with|font-series|<quote|bold>|math-font-series|<quote|bold>|(a)>>
+      a triple tree and <with|font-size|<quote|0.707>|<with|font-series|<quote|bold>|math-font-series|<quote|bold>|(b)>>
+      an array.|<pageref|auto-1>>
     </associate>
   </collection>
 </auxiliary>
