@@ -95,7 +95,22 @@
           1<hspace|3ex><strong|return> <math|d*<around*|(|i-1|)>+1+j>
         </render-code>
 
-        <item>
+        <item>Since each non-leaf node contains at most <math|d> children, a
+        tree of hieght <math|h> has total number of nodes bounded by:
+
+        <\equation*>
+          1+d+\<ldots\>+d<rsup|h-1>\<less\>n\<leq\>1+d+\<ldots\>+d<rsup|h>
+        </equation*>
+
+        that is,
+
+        <\equation*>
+          <frac|d<rsup|h>-1|d-1>\<less\>n\<leq\><frac|d<rsup|h+1>-1|d-1>
+        </equation*>
+
+        In other words, <math|n=\<Theta\> <around*|(|d<rsup|h>|)>>
+
+        So <math|h=\<Theta\> <around*|(|log<rsub|d> n|)>>.
       </enumerate-alpha>
     </answer>
   </render-exercise>
