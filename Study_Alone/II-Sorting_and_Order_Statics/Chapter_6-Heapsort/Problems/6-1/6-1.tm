@@ -79,19 +79,34 @@
         </float>. Notice that children of node of index 3 are different in
         two figures.
 
-        <item>In the worst case, <with|font-shape|small-caps|Build-Max-Heap><math|<rprime|'>>
-        builds a max-heap from an array of increasing order. Each time a node
-        is inserted into the heap, it trace a path from that node at index
-        <math|i> to the root, which has a length of <math|\<Theta\>
-        <around*|(|lg n|)>>. As the insertion iterates for <math|n-1> times,
-        the worst case running time of <with|font-shape|small-caps|Build-Max-Heap><math|<rprime|'>>
-        is
+        <item>An upper bound of <math|O <around*|(|n*lg n|)>> time follows
+        immediately from there being <math|n-1> calls to
+        <with|font-shape|small-caps|Max-Heap-Insert>, each taking <math|O
+        <around*|(|lg n|)>> time. Form a lower bound of <math|\<Omega\>
+        <around*|(|n*lg n|)>>, consider the case in which the input array is
+        given in strictly increasing order. Each call to
+        <with|font-shape|small-caps|Max-HEap-Insert> causes
+        <with|font-shape|small-caps|Heap-Increase-Key> to go all the way up
+        to the root. Since the depth of node <math|i> is
+        <math|<around*|\<lfloor\>|lg i|\<rfloor\>>>, the total time is
 
         <\eqnarray*>
-          <tformat|<table|<row|<cell|T <around*|(|n|)>>|<cell|=>|<cell|<around*|(|n-1|)>*\<Theta\>
-          <around*|(|lg n|)>>>|<row|<cell|>|<cell|=>|<cell|\<Theta\>
+          <tformat|<table|<row|<cell|<above|<below|<big|sum>|i=1>|n>
+          \<Theta\> <around*|(|<around*|\<lfloor\>|lg
+          i|\<rfloor\>>|)>>|<cell|\<geq\>>|<cell|<above|<below|<big|sum>|i=<around*|\<lceil\>|n/2|\<rceil\>>>|n>
+          \<Theta\> <around*|(|<around*|\<lfloor\>|lg
+          <around*|\<lceil\>|n/2|\<rceil\>>|\<rfloor\>>|)>>>|<row|<cell|>|<cell|\<geq\>>|<cell|<above|<below|<big|sum>|i=<around*|\<lceil\>|n/2|\<rceil\>>>|n>
+          \<Theta\> <around*|(|<around*|\<lfloor\>|lg
+          <around*|(|n/2|)>|\<rfloor\>>|)>>>|<row|<cell|>|<cell|=>|<cell|<above|<below|<big|sum>|i=<around*|\<lceil\>|n/2|\<rceil\>>>|n>
+          \<Theta\> <around*|(|<around*|\<lfloor\>|lg
+          n-1|\<rfloor\>>|)>>>|<row|<cell|>|<cell|\<geq\>>|<cell|n/2\<cdot\>\<Theta\>
+          <around*|(|lg n|)>>>|<row|<cell|>|<cell|=>|<cell|\<Omega\>
           <around*|(|n*lg n|)>>>>>
         </eqnarray*>
+
+        In the worst case, therefore, <with|font-shape|small-caps|Build-Max-Heap><math|<rprime|'>>
+        requires <math|\<Theta\> <around*|(|n*lg n|)>> time to build an
+        <math|n>-element heap.
       </enumerate-alpha>
     </answer>
   </render-exercise>
