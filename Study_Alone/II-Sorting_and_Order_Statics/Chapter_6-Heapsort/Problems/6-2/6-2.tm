@@ -35,6 +35,14 @@
       terms of <math|n> and <math|d>?
 
       <item>Give an efficient implementation of
+      <with|font-shape|small-caps|Max-Heapify> in a <math|d>-ary max-heap.
+      Analyze its running time in terms of <math|d> and <math|n>.
+
+      <item>Given an efficient implementation of
+      <with|font-shape|small-caps|Build-Max-Heap> in a <math|d>-ary max-heap.
+      Analyze its running time in terms of <math|d> and <math|n>.
+
+      <item>Give an efficient implementation of
       <with|font-shape|small-caps|Extract-Max> in a <math|d>-ary max-heap.
       Analyze its running time in terms of <math|d> and <math|n>.
 
@@ -108,9 +116,17 @@
           <frac|d<rsup|h>-1|d-1>\<less\>n\<leq\><frac|d<rsup|h+1>-1|d-1>
         </equation*>
 
-        In other words, <math|n=\<Theta\> <around*|(|d<rsup|h>|)>>
+        In other words, <math|n=\<Theta\> <around*|(|d<rsup|h>|)>>. Thus,
+        <math|h=\<Theta\> <around*|(|log<rsub|d> n|)>>.
 
-        So <math|h=\<Theta\> <around*|(|log<rsub|d> n|)>>.
+        <item>The <with|font-shape|small-caps|D-Max-Heapify> procedure takes
+        as its arguments an array <math|A>, an index <math|i> into the array
+        and the amount of its children <math|d>. When it is called,
+        <with|font-shape|small-caps|D-Max-Heapify> assumes that the
+        <math|d>-ary rooted at <with|font-shape|small-caps|Child><math|<around*|(|i,j|)>>,
+        for each <math|1\<leq\>j\<leq\>d> are max-heaps, but that
+        <math|A<around*|[|i|]>> might be smaller than its children.
+        <with|font-shape|small-caps|D-Max-Heapify> lets
       </enumerate-alpha>
     </answer>
   </render-exercise>
@@ -131,7 +147,7 @@
     <associate|6-2_Figure|<tuple|1|?>>
     <associate|auto-1|<tuple|1|1>>
     <associate|auto-2|<tuple|2|?|../../../../../../../../../.TeXmacs/texts/scratch/no_name_31.tm>>
-    <associate|footnote-*|<tuple|<with|font-series|<quote|bold>|math-font-series|<quote|bold>|e>|1>>
+    <associate|footnote-*|<tuple|<with|font-series|<quote|bold>|math-font-series|<quote|bold>|g>|1>>
   </collection>
 </references>
 
