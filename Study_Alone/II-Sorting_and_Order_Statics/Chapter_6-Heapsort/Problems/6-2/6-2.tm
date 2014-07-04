@@ -126,7 +126,20 @@
         <math|d>-ary rooted at <with|font-shape|small-caps|Child><math|<around*|(|i,j|)>>,
         for each <math|1\<leq\>j\<leq\>d> are max-heaps, but that
         <math|A<around*|[|i|]>> might be smaller than its children.
-        <with|font-shape|small-caps|D-Max-Heapify> lets
+        <with|font-shape|small-caps|D-Max-Heapify> lets the value at
+        <math|A<around*|[|i|]>> ``float down'' in the max-heap in the same
+        way as binary heap.
+
+        <\render-code>
+          <with|font-shape|small-caps|D-Max-Heapify><math|<around*|(|A,i,d|)>>
+
+          1<hspace|3ex><em|largest> <math|\<leftarrow\>> <math|i>
+
+          2<hspace|3ex><strong|for> <em|j> <math|\<leftarrow\>> <math|1>
+          <strong|to> <em|d>
+
+          3<hspace|3ex>
+        </render-code>
       </enumerate-alpha>
     </answer>
   </render-exercise>
