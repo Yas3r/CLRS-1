@@ -133,13 +133,39 @@
         <\render-code>
           <with|font-shape|small-caps|D-Max-Heapify><math|<around*|(|A,i,d|)>>
 
-          1<hspace|3ex><em|largest> <math|\<leftarrow\>> <math|i>
+          1<hspace|3ex><em|largest> <math|=> <math|i>
 
-          2<hspace|3ex><strong|for> <em|j> <math|\<leftarrow\>> <math|1>
-          <strong|to> <em|d>
+          2<hspace|3ex><strong|for> <em|j> <math|=> <math|1> <strong|to>
+          <em|d>
 
-          3<hspace|3ex>
+          3<hspace|8ex><math|k> <math|=> <with|font-shape|small-caps|Child><math|<around*|(|i,j|)>>
+
+          4<hspace|8ex><strong|if> <math|k> <math|\<leq\>> <em|A.heap-size>
+          and <math|A<around*|[|k|]>> <math|\<gtr\>>
+          <math|A<around*|[|<text|<em|largest>>|]>>
+
+          5<hspace|13ex><em|largest> <math|=> <math|k>
+
+          6<hspace|3ex><strong|if> <em|largest> <math|\<neq\>> <math|i>
+
+          7<hspace|8ex>exchange <math|A<around*|[|i|]>> with
+          <math|A<around*|[|<text|<em|largest>>|]>>
+
+          8<hspace|8ex><with|font-shape|small-caps|D-Max-Heapify><math|<around*|(|A,<text|<em|largest>>,d|)>>
         </render-code>
+
+        <hspace|3ex>The running time of <with|font-shape|small-caps|D-Max-Heapify>
+        on a subtree of size <math|n> rooted at a given node <math|i> is the
+        <math|\<Theta\> <around*|(|d|)>> time to fix up the relation ships
+        amongs the elemnts <math|A<around*|[|i|]>,A<around*|[|<text|<with|font-shape|small-caps|Child>><around*|(|i,1|)>|]>,\<ldots\>,A<around*|[|<text|<with|font-shape|small-caps|Child>><around*|(|i,d|)>|]>>,
+        plus the time to run <with|font-shape|small-caps|D-Max-Heapify> on a
+        subtree rooted at one of the children of node <math|i> (assuming that
+        the recursive call occurs). The children's subtrees each have depth
+        at most <math|<around*|(|log<rsub|d> n|)>-1>. Hence, the total
+        running time for thie algorithm is <math|O <around*|(|d*log<rsub|d>
+        n|)>>.
+
+        <item> <math|>
       </enumerate-alpha>
     </answer>
   </render-exercise>
