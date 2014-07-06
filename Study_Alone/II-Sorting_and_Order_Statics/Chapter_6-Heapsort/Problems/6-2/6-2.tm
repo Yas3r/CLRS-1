@@ -165,7 +165,30 @@
         running time for thie algorithm is <math|O <around*|(|d*log<rsub|d>
         n|)>>.
 
-        <item> <math|>
+        <item>We can use the procedure <with|font-shape|small-caps|D-Max-Heapify>
+        in a bottom-up manner to build a <math|d>-ary max-heap from array
+        <math|A<around*|[|1 . . n|]>>, where <math|n=A.<text|<em|length>>>,
+        into a max-heap. As elements in the subarray
+        <math|A<around*|[|<around*|(|<around*|\<lceil\>|<around*|(|n-1|)>/d|\<rceil\>>+1|)>
+        . . n|]>> are all leaves of the tree, an so each is a 1-element heap
+        to begin with. The procedure <with|font-shape|small-caps|D-Build-Max-Heap>
+        goes through the remaining nodes of the tree and runs
+        <with|font-shape|small-caps|D-Max-Heapify> on each one.
+
+        <\render-code>
+          <with|font-shape|small-caps|D-Build-Max-Heap><math|<around*|(|A|)>>
+
+          1<hspace|3ex><em|A.heap-size> <math|=> <em|A.length>
+
+          2<hspace|3ex><strong|for> <math|i> <math|=>
+          <math|<around*|\<lceil\>|<text|<em|A.length>>/2|\<rceil\>>>
+          <strong|downto> <math|1>
+
+          3<hspace|8ex><with|font-shape|small-caps|D-Max-Heapify><math|<around*|(|A,i,d|)>>
+        </render-code>
+
+        The running time of <with|font-shape|small-caps|D-Build-Max-Heap>,
+        like the binary heap, is <math|O <around*|(|n|)>>.
       </enumerate-alpha>
     </answer>
   </render-exercise>
