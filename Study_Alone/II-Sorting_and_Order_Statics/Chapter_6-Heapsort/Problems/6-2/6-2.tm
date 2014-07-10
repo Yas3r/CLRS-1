@@ -168,8 +168,10 @@
         <item>We can use the procedure <with|font-shape|small-caps|D-Max-Heapify>
         in a bottom-up manner to build a <math|d>-ary max-heap from array
         <math|A<around*|[|1 . . n|]>>, where <math|n=A.<text|<em|length>>>,
-        into a max-heap. As elements in the subarray
-        <math|A<around*|[|<around*|(|<around*|\<lceil\>|<around*|(|n-1|)>/d|\<rceil\>>+1|)>
+        into a max-heap. The last non-leaf node is the parent of the last
+        node, and by procedure <with|font-shape|small-caps|D-Parent>, it has
+        it index <math|<around*|\<lceil\>|<around*|(|n-1|)>/d|\<rceil\>>>. So
+        elements in the subarray <math|A<around*|[|<around*|(|<around*|\<lceil\>|<around*|(|n-1|)>/d|\<rceil\>>+1|)>
         . . n|]>> are all leaves of the tree, an so each is a 1-element heap
         to begin with. The procedure <with|font-shape|small-caps|D-Build-Max-Heap>
         goes through the remaining nodes of the tree and runs
@@ -181,14 +183,34 @@
           1<hspace|3ex><em|A.heap-size> <math|=> <em|A.length>
 
           2<hspace|3ex><strong|for> <math|i> <math|=>
-          <math|<around*|\<lceil\>|<text|<em|A.length>>/2|\<rceil\>>>
+          <math|<around*|\<lceil\>|<around*|(|<text|<em|A.length>>-1|)>/d|\<rceil\>>>
           <strong|downto> <math|1>
 
           3<hspace|8ex><with|font-shape|small-caps|D-Max-Heapify><math|<around*|(|A,i,d|)>>
         </render-code>
 
-        The running time of <with|font-shape|small-caps|D-Build-Max-Heap>,
-        like the binary heap, is <math|O <around*|(|n|)>>.
+        <hspace|3ex>We can compute the running time of this procedure by
+        observing that there are
+
+        <\equation*>
+          d<rsup|log<rsub|d> <around*|[|n<around*|(|d-1|)>|]>-<around*|(|h+1|)>>=d<rsup|log<rsub|d>
+          <frac|n*<around*|(|d-1|)>|d<rsup|h+1>>>=<frac|n*<around*|(|d-1|)>|d<rsup|h+1>>
+        </equation*>
+
+        nodes on level of height <math|h>. As part (c) shows, each call to
+        <with|font-shape|small-caps|D-Max-Heapify> on level of height
+        <math|h> is <math|O <around*|(|d*h|)>>. So, the running time
+
+        <\eqnarray*>
+          <tformat|<table|<row|<cell|T <around*|(|n|)>>|<cell|\<leq\>>|<cell|<below|<above|<big|sum>|log<rsub|d>
+          n*<around*|(|d-1|)>>|h=0>d*h*<frac|n*<around*|(|d-1|)>|d<rsup|h+1>>>>|<row|<cell|>|<cell|\<less\>>|<cell|n*<around*|(|d-1|)>*<below|<above|<big|sum>|\<infty\>>|h=0><frac|h|d<rsup|h>>>>|<row|<cell|>|<cell|\<leq\>>|<cell|n*<around*|(|d-1|)>*<frac|1/d|<around*|(|1-1/d|)><rsup|2>><hspace|25ex><text|<em|A.8>>>>|<row|<cell|>|<cell|=>|<cell|n*<frac|d|d-1>>>|<row|<cell|>|<cell|=>|<cell|n*<around*|(|1+<frac|1|d-1>|)>>>>>
+        </eqnarray*>
+
+        For any <math|d\<geq\>2>, we have
+        <math|1\<leq\>1+1/<around*|(|d-1|)>\<leq\>2>, so <math|T
+        <around*|(|n|)>\<leq\>\<Theta\> <around*|(|n|)>>.
+
+        <item>
       </enumerate-alpha>
     </answer>
   </render-exercise>
