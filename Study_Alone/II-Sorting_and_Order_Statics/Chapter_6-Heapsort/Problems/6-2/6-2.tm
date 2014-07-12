@@ -210,6 +210,38 @@
         <math|1\<leq\>1+1/<around*|(|d-1|)>\<leq\>2>, so <math|T
         <around*|(|n|)>\<leq\>\<Theta\> <around*|(|n|)>>.
 
+        <item>The procedure <with|font-shape|small-caps|D-Heap-Extract-Max>
+        implements the <with|font-shape|small-caps|Extract-Max> operation in
+        a <math|d>-ary max-heap. It is almost identical to
+        <with|font-shape|small-caps|Heap-Extract-Max> for binary heap which
+        we saw in the text.
+
+        <\render-code>
+          <with|font-shape|small-caps|D-Heap-Extract-Max><math|<around*|(|A|)>>
+
+          1<hspace|3ex><strong|if> <em|A.heap-size> <math|\<less\>> <math|1>
+
+          2<hspace|8ex><strong|error> ``heap underflow''
+
+          3<hspace|3ex><em|max> <math|=> <math|A<around*|[|1|]>>
+
+          4<hspace|3ex><math|A<around*|[|1|]>> <math|=>
+          <math|A<around*|[|A.<text|<em|heap-size>>|]>>
+
+          5<hspace|3ex><em|A.heap-size> <math|=> <em|A.heap-size> <math|->
+          <math|1>
+
+          6<hspace|3ex><with|font-shape|small-caps|D-Max-Heapify><math|<around*|(|A,1|)>>
+
+          7<hspace|3ex><strong|return> <em|max>
+        </render-code>
+
+        The running time of <with|font-shape|small-caps|D-Heap-Extract-Max>
+        is <math|O <around*|(|d*log<rsub|d> n|)>>, since it performs only a
+        constant amount of work on top of the <math|O
+        <around*|(|d*log<rsub|d>*n|)>> time for
+        <with|font-shape|small-caps|D-Max-Heapify>.
+
         <item>
       </enumerate-alpha>
     </answer>
