@@ -46,16 +46,16 @@
       <with|font-shape|small-caps|Extract-Max> in a <math|d>-ary max-heap.
       Analyze its running time in terms of <math|d> and <math|n>.
 
-      <item>Give an efficient implementation ot
-      <with|font-shape|small-caps|Insert> in a <math|d>-ary max-heap. Analyze
-      its running time in terms of <math|d> and <math|n>.
-
       <item>Give an efficient implementation of
       <with|font-shape|small-caps|Increase-Key><math|<around*|(|A,i,k|)>>,
       which flags an error if <math|k\<less\>A<around*|[|i|]>>, but otherwise
       sets <math|A<around*|[|i|]>=k> and then updates the <math|d>-ary
-      max-haep structure appropriately. Analyze its running time in terms of
+      max-heap structure appropriately. Analyze its running time in terms of
       <math|d> and <math|n>.
+
+      <item>Give an efficient implementation ot
+      <with|font-shape|small-caps|Insert> in a <math|d>-ary max-heap. Analyze
+      its running time in terms of <math|d> and <math|n>.
     </enumerate-alpha>
 
     <\answer>
@@ -162,7 +162,7 @@
         subtree rooted at one of the children of node <math|i> (assuming that
         the recursive call occurs). The children's subtrees each have depth
         at most <math|<around*|(|log<rsub|d> n|)>-1>. Hence, the total
-        running time for thie algorithm is <math|O <around*|(|d*log<rsub|d>
+        running time for this algorithm is <math|O <around*|(|d*log<rsub|d>
         n|)>>.
 
         <item>We can use the procedure <with|font-shape|small-caps|D-Max-Heapify>
@@ -242,7 +242,55 @@
         <around*|(|d*log<rsub|d>*n|)>> time for
         <with|font-shape|small-caps|D-Max-Heapify>.
 
-        <item>
+        <item>The procedure <with|font-shape|small-caps|D-Heap-Increase-Key>
+        implements the <with|font-shape|small-caps|Increase-Key> operation in
+        a <math|d>-ary max-heap. As increasing the key of
+        <math|A<around*|[|i|]>> might violate the max-heap property, the
+        procedure traverse a path from this node to the root and repeatedly
+        move the element upward until it is smaller than its parent.
+
+        <\render-code>
+          <with|font-shape|small-caps|D-Heap-Increase-Key><math|<around*|(|A,i,k|)>>
+
+          1<hspace|3ex><strong|if> <em|k> <math|\<less\>>
+          <math|A<around*|[|i|]>>
+
+          2<hspace|8ex><strong|error> ``new key is smaller than current key''
+
+          3<hspace|3ex><math|A<around*|[|i|]>> <math|=> <math|k>
+
+          4<hspace|3ex><strong|while> <math|i> <math|\<gtr\>> <math|1> and
+          <math|A<around*|[|<text|<with|font-shape|small-caps|Parent>><around*|(|i|)>|]>>
+          <math|\<less\>> <math|A<around*|[|i|]>>
+
+          5<hspace|8ex>exchange <math|A<around*|[|i|]>> with
+          <math|A<around*|[|<text|<with|font-shape|small-caps|Parent>><around*|(|i|)>|]>>
+
+          6<hspace|8ex><math|i> <math|=> <with|font-shape|small-caps|Parent><math|<around*|(|i|)>>
+        </render-code>
+
+        The running time of <with|font-shape|small-caps|D-Max-Heap-Increase-Key>
+        on an <math|n>-element heap is <math|O <around*|(|log<rsub|d> n|)>>,
+        since the path traced from the node updated in line 3 to the root has
+        length <math|O <around*|(|log<rsub|d> n|)>>.
+
+        <item>The procedure <with|font-shape|small-caps|D-Max-Heap-Insert> is
+        the same to that of binary heap in the text.
+
+        <\render-code>
+          <with|font-shape|small-caps|D-Max-Heap-Insert><math|<around*|(|A,k|)>>
+
+          1<hspace|3ex><em|A.heap-size> <math|=> <em|A.heap-size> <math|+>
+          <math|1>
+
+          2<hspace|3ex><math|A<around*|[|A.<text|<em|heap-size>>|]>> <math|=>
+          <math|-\<infty\>>
+
+          3<hspace|3ex><with|font-shape|small-caps|D-Heap-Increase-Key><math|<around*|(|A,<text|<em|A.heap-size>>,k|)>>
+        </render-code>
+
+        The running time of <with|font-shape|small-caps|D-Max-Heap-Insert> on
+        an <math|n>-element heap is <math|O <around*|(|log<rsub|d> n|)>>.
       </enumerate-alpha>
     </answer>
   </render-exercise>
@@ -260,7 +308,7 @@
   <\collection>
     <associate|6-1_Figure_1|<tuple|1|?|../../../../../../../../../.TeXmacs/texts/scratch/no_name_31.tm>>
     <associate|6-1_Figure_2|<tuple|2|?|../../../../../../../../../.TeXmacs/texts/scratch/no_name_31.tm>>
-    <associate|6-2_Figure|<tuple|1|?>>
+    <associate|6-2_Figure|<tuple|1|1>>
     <associate|auto-1|<tuple|1|1>>
     <associate|auto-2|<tuple|2|?|../../../../../../../../../.TeXmacs/texts/scratch/no_name_31.tm>>
     <associate|footnote-*|<tuple|<with|font-series|<quote|bold>|math-font-series|<quote|bold>|g>|1>>
