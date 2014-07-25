@@ -18,7 +18,13 @@
       aka <with|font|heiti|\<#989C\> \<#5E8F\>>).<new-line>
       <hspace|2.20ex>Email address: informlarry@gmail.com>
 
-      The substitution method requires us to show that <math|T
+      One must show that both <math|T <around*|(|n|)>=O
+      <around*|(|n<rsup|2>|)>> and <math|T <around*|(|n|)>=\<Omega\>
+      <around*|(|n<rsup|2>|)>> hold to converge on the correct,
+      asymptotically tight bound <math|T <around*|(|n|)>=\<Theta\>
+      <around*|(|n<rsup|2>|)>>.<new-line> <hspace|2ex>We first set out to
+      prove that <math|T <around*|(|n|)>=O <around*|(|n<rsup|2>|)>>. The
+      substitution method requires us to show that <math|T
       <around*|(|n|)>\<leq\>c*n<rsup|2>> for an appropriate choice of the
       constant <math|c\<gtr\>0>. We start by assuming that this bound holds
       for all positive <math|m\<less\>n>, in particular for <math|m=n-1>,
@@ -31,7 +37,10 @@
       </eqnarray*>
 
       where the last step holds as long as <math|0\<leq\>d\<leq\>c> and
-      <math|n\<geq\>1>. Therefore the recurrence <math|T <around*|(|n|)>=T
+      <math|n\<geq\>1>. So it turns out that <math|T <around*|(|n|)>=O
+      <around*|(|n<rsup|2>|)>>.<new-line> <hspace|2ex>Similarly we can prove
+      that <math|T <around*|(|n|)>=\<Omega\> <around*|(|n<rsup|2>|)>>.
+      Therefore the recurrence <math|T <around*|(|n|)>=T
       <around*|(|n-1|)>+\<Theta\> <around*|(|n|)>> has the solution <math|T
       <around*|(|n|)>=\<Theta\> <around*|(|n<rsup|2>|)>>.
     </proof>
